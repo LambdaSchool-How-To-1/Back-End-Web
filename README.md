@@ -66,7 +66,7 @@ Deletes the user with that id
 
 
 
-(guides) endpoints:
+# (guides) endpoints:
 
 # GET api/guides/
 Gets the all the guides
@@ -99,5 +99,5 @@ image: 'https://cdn.pixabay.com/photo/2016/04/02/14/01/money-1302835_960_720.jpg
 }
 ```
 
-# DELETE api/listings/:id
+# DELETE api/guides/:id
 Lets you delete a listing with that id
