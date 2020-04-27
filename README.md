@@ -1,10 +1,10 @@
 # Back-End-Web
 
-Authentication Endpoints:
+# Authentication Endpoints:
 
 Users will need to register and then login to be able to access an option to create their own how to guides.
 
-(users) POST /api/auth/users/register
+# (users) POST /api/auth/users/register
 
 Expected request body: 
 
@@ -28,7 +28,7 @@ Returns:
 ```
 
 
-(users) POST /api/auth/users/login
+# (users) POST /api/auth/users/login
 
 Expected login body:
 
@@ -50,16 +50,16 @@ Returns:
 
 ```
 
-GET api/users/
+# GET api/users/
 
 Gets a list of users. You probably wont need this but this is the baseURL for the next few endpoints. 
 
 
-GET /api/users/id
+# GET /api/users/id
 Gets the user information by id
 
 
-DELETE /api/users/:id
+# DELETE /api/users/:id
 Deletes the user with that id
 
 
@@ -68,14 +68,14 @@ Deletes the user with that id
 
 (guides) endpoints:
 
-GET api/guides/
+# GET api/guides/
 Gets the all the guides
 
 
-GET /api/guides/:id
+# GET /api/guides/:id
 Gets the guide for that id
 
-POST /api/guides
+# POST /api/guides
 Lets you create a new guide
 
 ```
@@ -87,7 +87,7 @@ image: 'https://cdn.pixabay.com/photo/2016/04/02/14/01/money-1302835_960_720.jpg
 }
 ```
 
-PUT /api/guides/:id
+# PUT /api/guides/:id
 Lets you update a listing with that id
 
 ```
@@ -99,5 +99,5 @@ image: 'https://cdn.pixabay.com/photo/2016/04/02/14/01/money-1302835_960_720.jpg
 }
 ```
 
-DELETE api/listings/:id
+# DELETE api/listings/:id
 Lets you delete a listing with that id
