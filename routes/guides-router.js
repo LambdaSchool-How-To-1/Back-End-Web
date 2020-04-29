@@ -35,7 +35,7 @@ router.get('/:id', (req, res) => {
 // POST
 
 router.post('/', (req, res) => {
-    guideData = req.body;
+    const guideData = req.body;
 
     Guides.add(guideData)
     .then(guide => {

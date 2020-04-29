@@ -22,7 +22,7 @@ function add(post) {
     return db('guides')
     .insert(post, 'id')
     .then(ids => {
-        return getById(ids[0]);
+        return findById(ids[0]);
     });
 }
 
@@ -37,3 +37,5 @@ function remove(id) {
     .where({ id })
     .del();
 }
+
+
