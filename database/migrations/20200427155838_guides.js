@@ -10,6 +10,8 @@ exports.up = function(knex) {
         .string('description', 1000)
         .notNullable();
     guides
+        .string('category', 128)
+    guides
         .string('image');
 
     // Foreign Key
