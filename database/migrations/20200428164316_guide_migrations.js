@@ -11,7 +11,7 @@ exports.up = function(knex) {
       guides
           .string('image');
   
-        guides
+    guides
         .string('category');
 
       guides

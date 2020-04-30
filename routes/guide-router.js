@@ -36,6 +36,7 @@ router.post('/', (req, res) => {
 
     Guides.add(guideData)
     .then(guide => {
+        console.log(guide)
         res.status(201).json(guide);
     })
     .catch(err => {
