@@ -22,8 +22,7 @@ server.use('/api/users', restricted, usersRouter);
 server.use('/api/guides', guidesRouter);
 
 server.get('/', (req, res) => {
-    res.send('Server is running');
+    res.status(200).json({message: "Server is running"});
 });
-
 module.exports = server; 
 

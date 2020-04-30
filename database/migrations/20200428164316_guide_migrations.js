@@ -3,15 +3,17 @@ exports.up = function(knex) {
       guides.increments();
   
       guides
-          .string('title', 255)
+          .string('title')
           .notNullable();
       guides
-          .string('description', 1000)
+          .string('description')
           .notNullable();
       guides
           .string('image');
   
-      
+        guides
+        .string('category');
+
       guides
           .integer('guides_id')
           .unsigned()
